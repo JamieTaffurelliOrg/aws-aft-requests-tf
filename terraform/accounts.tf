@@ -1,4 +1,4 @@
-module "identity" {
+module "identity-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
