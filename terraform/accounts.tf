@@ -11,15 +11,15 @@ module "identity-01" {
   }
 
   account_tags = {
-    data-classification = "confidential"
-    criticality         = "mission-critical"
-    ops-commitment      = "workload-operations"
-    ops-team            = "sre"
-    cost-owner          = "jltaffurelli@outlook.com"
-    owner               = "jltaffurelli@outlook.com"
-    sla                 = "high"
-    environment         = "prod"
-    stack               = "identity"
+    "data-classification" = "confidential"
+    "criticality"         = "mission-critical"
+    "ops-commitment"      = "workload-operations"
+    "ops-team"            = "sre"
+    "cost-owner"          = "jltaffurelli@outlook.com"
+    "owner"               = "jltaffurelli@outlook.com"
+    "sla"                 = "high"
+    "environment"         = "prod"
+    "stack"               = "identity"
   }
 
   change_management_parameters = {
