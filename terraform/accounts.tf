@@ -17,7 +17,7 @@ module "identity-01" {
     "ops-team"            = "sre"
     "cost-owner"          = "jltaffurelli@outlook.com"
     "owner"               = "jltaffurelli@outlook.com"
-    "sla"                 = "high"
+    "sla"                 = "low"
     "environment"         = "prod"
     "stack"               = "identity"
   }
