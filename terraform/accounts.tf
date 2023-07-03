@@ -1,11 +1,11 @@
-module "Identity-identity-shared" {
+module "testabc" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "jamietaffurelli+aws-identity-shared@jamietaffurelli.onmicrosoft.com"
-    AccountName               = "identity-shared"
+    AccountEmail              = "jamietaffurelli+awstestabc@jamietaffurelli.onmicrosoft.com"
+    AccountName               = "testabc"
     ManagedOrganizationalUnit = "Platform"
-    SSOUserEmail              = "jamietaffurelli+aws-identity-shared@jamietaffurelli.onmicrosoft.com"
+    SSOUserEmail              = "jamietaffurelli+awstestabc@jamietaffurelli.onmicrosoft.com"
     SSOUserFirstName          = "Jamie"
     SSOUserLastName           = "Taffurelli"
   }
