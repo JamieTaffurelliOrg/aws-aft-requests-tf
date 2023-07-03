@@ -4,7 +4,7 @@ module "Identity-identity-shared" {
   control_tower_parameters = {
     AccountEmail              = "jamietaffurelli+aws-identity-shared@jamietaffurelli.onmicrosoft.com"
     AccountName               = "identity-shared"
-    ManagedOrganizationalUnit = "Identity (ou-kh9q-rd0xycel)"
+    ManagedOrganizationalUnit = "Platform"
     SSOUserEmail              = "jamietaffurelli+aws-identity-shared@jamietaffurelli.onmicrosoft.com"
     SSOUserFirstName          = "Jamie"
     SSOUserLastName           = "Taffurelli"
