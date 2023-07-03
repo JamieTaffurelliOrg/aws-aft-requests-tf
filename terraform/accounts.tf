@@ -5,7 +5,7 @@ module "identity-01" {
     AccountEmail              = "jamietaffurelli+aws-identity@jamietaffurelli.onmicrosoft.com"
     AccountName               = "identity-01"
     ManagedOrganizationalUnit = "Security"
-    SSOUserEmail              = "jamietaffurelli+aws-identity@jamietaffurelli.onmicrosoft.com"
+    SSOUserEmail              = "jamietaffurelli@jamietaffurelli.onmicrosoft.com"
     SSOUserFirstName          = "Jamie"
     SSOUserLastName           = "Taffurelli"
   }
@@ -17,7 +17,7 @@ module "identity-01" {
     "ops-team"            = "sre"
     "cost-owner"          = "jltaffurelli@outlook.com"
     "owner"               = "jltaffurelli@outlook.com"
-    "sla"                 = "low"
+    "sla"                 = "high"
     "environment"         = "prod"
     "stack"               = "identity"
   }
