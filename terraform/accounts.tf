@@ -1,11 +1,11 @@
-module "tf-external-01" {
+module "tf-ext-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "jamietaffurelli+aws-tf-external-01@jamietaffurelli.onmicrosoft.com"
-    AccountName               = "tf-external-01"
-    ManagedOrganizationalUnit = "TF-External"
-    SSOUserEmail              = "jamietaffurelli+aws-tf-external-01@jamietaffurelli.onmicrosoft.com"
+    AccountEmail              = "jamietaffurelli+aws-tf-ext-01@jamietaffurelli.onmicrosoft.com"
+    AccountName               = "tf-ext-01"
+    ManagedOrganizationalUnit = "TF-External (ou-kh9q-ee3ki8fe)"
+    SSOUserEmail              = "jamietaffurelli+aws-tf-ext-01@jamietaffurelli.onmicrosoft.com"
     SSOUserFirstName          = "Jamie"
     SSOUserLastName           = "Taffurelli"
   }
