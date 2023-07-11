@@ -2,10 +2,10 @@ module "tf-ext-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "jamietaffurelli+aws-tf-ext-01@jamietaffurelli.onmicrosoft.com"
+    AccountEmail              = "aws+tf-ext-01@jamietaffurelli.com"
     AccountName               = "tf-ext-01"
-    ManagedOrganizationalUnit = "TF-External (ou-kh9q-ee3ki8fe)"
-    SSOUserEmail              = "jamietaffurelli+aws-tf-ext-01@jamietaffurelli.onmicrosoft.com"
+    ManagedOrganizationalUnit = "tf-external (ou-mi22-j6115ulv)"
+    SSOUserEmail              = "aws+tf-ext-01@jamietaffurelli.com"
     SSOUserFirstName          = "Jamie"
     SSOUserLastName           = "Taffurelli"
   }
@@ -30,7 +30,7 @@ module "tf-ext-01" {
   account_customizations_name = ""
 }
 
-module "idenshrd01" {
+/*module "idenshrd01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
@@ -188,4 +188,4 @@ module "app-prod-01" {
   }
 
   account_customizations_name = ""
-}
+}*/
