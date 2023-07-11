@@ -1,4 +1,4 @@
-module "tf-ext-01" {
+/*module "tf-ext-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
@@ -188,4 +188,4 @@ module "app-prod-01" {
   }
 
   account_customizations_name = ""
-}
+}*/
