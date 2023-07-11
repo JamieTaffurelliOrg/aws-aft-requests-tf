@@ -62,7 +62,7 @@ module "iden-shrd-01" {
   account_customizations_name = ""
 }
 
-/*module "conn-dev-01" {
+module "conn-dev-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
