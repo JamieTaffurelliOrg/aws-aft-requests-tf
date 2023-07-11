@@ -98,10 +98,10 @@ module "iden-shrd-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "jamietaffurelli+aws-conn-prod-01@jamietaffurelli.onmicrosoft.com"
+    AccountEmail              = "aws+conn-prod-01@jamietaffurelli.com"
     AccountName               = "conn-prod-01"
-    ManagedOrganizationalUnit = "Connectivity (ou-kh9q-prwg8dbb)"
-    SSOUserEmail              = "jamietaffurelli+aws-conn-prod-01@jamietaffurelli.onmicrosoft.com"
+    ManagedOrganizationalUnit = "connectivity (ou-mi22-6plq5blq)"
+    SSOUserEmail              = "aws+conn-prod-01@jamietaffurelli.com"
     SSOUserFirstName          = "Jamie"
     SSOUserLastName           = "Taffurelli"
   }
@@ -126,7 +126,7 @@ module "iden-shrd-01" {
   account_customizations_name = ""
 }
 
-module "app-dev-01" {
+/*module "app-dev-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
