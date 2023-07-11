@@ -30,14 +30,14 @@ module "tf-ext-01" {
   account_customizations_name = ""
 }
 
-/*module "idenshrd01" {
+module "iden-shrd-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "jamietaffurelli+awsidenshrd01@jamietaffurelli.onmicrosoft.com"
-    AccountName               = "idenshrd01"
-    ManagedOrganizationalUnit = "Identity (ou-kh9q-rd0xycel)"
-    SSOUserEmail              = "jamietaffurelli+awsidenshrd01@jamietaffurelli.onmicrosoft.com"
+    AccountEmail              = "aws+iden-shrd-01@jamietaffurelli.com"
+    AccountName               = "iden-shrd-01"
+    ManagedOrganizationalUnit = "identity (ou-mi22-xzjdvlvv)"
+    SSOUserEmail              = "aws+iden-shrd-01@jamietaffurelli.com"
     SSOUserFirstName          = "Jamie"
     SSOUserLastName           = "Taffurelli"
   }
@@ -62,7 +62,7 @@ module "tf-ext-01" {
   account_customizations_name = ""
 }
 
-module "conn-dev-01" {
+/*module "conn-dev-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
