@@ -94,7 +94,7 @@ module "conn-dev-01" {
   account_customizations_name = ""
 }
 
-/*module "conn-prod-01" {
+module "conn-prod-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
