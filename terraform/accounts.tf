@@ -152,7 +152,7 @@ module "conn-shrd-01" {
 
   change_management_parameters = {
     change_requested_by = "Jamie Taffurelli"
-    change_reason       = "Creating account for networking related resources shared across prod and dev"
+    change_reason       = "Creating account for shared networking resources"
   }
 
   account_customizations_name = ""
