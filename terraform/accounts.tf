@@ -158,14 +158,14 @@ module "app-dev-01" {
   account_customizations_name = ""
 }
 
-/*module "app-prod-01" {
+module "app-prod-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "jamietaffurelli+aws-app-prod-01@jamietaffurelli.onmicrosoft.com"
+    AccountEmail              = "aws+app-prod-01@jamietaffurelli.com"
     AccountName               = "app-prod-01"
-    ManagedOrganizationalUnit = "App (ou-kh9q-yk1k9exh)"
-    SSOUserEmail              = "jamietaffurelli+aws-app-prod-01@jamietaffurelli.onmicrosoft.com"
+    ManagedOrganizationalUnit = "app (ou-mi22-k8y3mam9)"
+    SSOUserEmail              = "aws+app-prod-01@jamietaffurelli.com"
     SSOUserFirstName          = "Jamie"
     SSOUserLastName           = "Taffurelli"
   }
@@ -188,4 +188,4 @@ module "app-dev-01" {
   }
 
   account_customizations_name = ""
-}*/
+}
