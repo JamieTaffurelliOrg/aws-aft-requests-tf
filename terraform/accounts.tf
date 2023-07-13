@@ -126,6 +126,38 @@ module "conn-prod-01" {
   account_customizations_name = ""
 }
 
+module "conn-shrd-01" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "aws+conn-shrd-01@jamietaffurelli.com"
+    AccountName               = "conn-shrd-01"
+    ManagedOrganizationalUnit = "connectivity (ou-mi22-6plq5blq)"
+    SSOUserEmail              = "aws+conn-shrd-01@jamietaffurelli.com"
+    SSOUserFirstName          = "Jamie"
+    SSOUserLastName           = "Taffurelli"
+  }
+
+  account_tags = {
+    "data-classification" = "confidential"
+    "criticality"         = "mission-critical"
+    "ops-commitment"      = "workload-operations"
+    "ops-team"            = "sre"
+    "cost-owner"          = "jltaffurelli@outlook.com"
+    "owner"               = "jltaffurelli@outlook.com"
+    "sla"                 = "high"
+    "environment"         = "prod"
+    "stack"               = "connectivity"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "Jamie Taffurelli"
+    change_reason       = "Creating account for networking shared resources"
+  }
+
+  account_customizations_name = ""
+}
+
 module "app-dev-01" {
   source = "./modules/aft-account-request"
 
