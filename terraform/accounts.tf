@@ -126,7 +126,7 @@ module "conn-prod-01" {
   account_customizations_name = ""
 }
 
-module "conn-shrd-01" {
+/*module "conn-shrd-01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
@@ -156,7 +156,7 @@ module "conn-shrd-01" {
   }
 
   account_customizations_name = ""
-}
+}*/
 
 module "app-dev-01" {
   source = "./modules/aft-account-request"
