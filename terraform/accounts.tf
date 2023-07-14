@@ -221,3 +221,35 @@ module "app-prod-01" {
 
   account_customizations_name = ""
 }
+
+module "app-shrd-01" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "aws+app-shrd-01@jamietaffurelli.com"
+    AccountName               = "app-shrd-01"
+    ManagedOrganizationalUnit = "app (ou-mi22-k8y3mam9)"
+    SSOUserEmail              = "aws+app-shrd-01@jamietaffurelli.com"
+    SSOUserFirstName          = "Jamie"
+    SSOUserLastName           = "Taffurelli"
+  }
+
+  account_tags = {
+    "data-classification" = "confidential"
+    "criticality"         = "mission-critical"
+    "ops-commitment"      = "workload-operations"
+    "ops-team"            = "sre"
+    "cost-owner"          = "jltaffurelli@outlook.com"
+    "owner"               = "jltaffurelli@outlook.com"
+    "sla"                 = "high"
+    "environment"         = "prod"
+    "stack"               = "app"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "Jamie Taffurelli"
+    change_reason       = "Creating account for app shared resources"
+  }
+
+  account_customizations_name = ""
+}
